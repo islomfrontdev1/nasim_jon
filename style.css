@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+body::before {
+    content: "Nasim_jon2012";
+    position: fixed;
+    top: 50%;
+    left: 20%;  /* 25% dan 20% ga o'zgartirdim */
+    transform: translate(-50%, -50%);
+    font-size: 4em;  /* 5em dan 4em ga kamaytirildi */
+    color: rgba(0, 0, 0, 1);  /* To'liq qora rang */
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+}
+
+body::after {
+    content: "Nasim_jon2012";
+    position: fixed;
+    top: 50%;
+    right: 20%;
+    transform: translate(50%, -50%);
+    font-size: 4em;
+    color: rgba(0, 0, 0, 1);  /* To'liq qora rang */
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.calculator {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#result {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: #f8f9fa;
+    font-size: 24px;
+    text-align: right;
+    padding: 0 20px;
+    border-radius: 8px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background: #e9ecef;
+}
+
+.operator {
+    background: #e9ecef;
+    color: #495057;
+}
+
+.equal {
+    background: #007bff;
+    color: white;
+    grid-column: span 2;
+}
+
+.equal:hover {
+    background: #0056b3;
+}
+
+.social-links-top {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.instagram-link {
+    color: #e1306c;
+    font-size: 4em;  /* 3em dan 4em ga o'zgartirdim */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.instagram-link:hover {
+    transform: scale(1.2);
+}
